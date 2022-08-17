@@ -7,32 +7,26 @@
         {
           "faces": {
             "down": {
-              "cullface": "down",
               "emissivity": 15,
               "texture": "#inner"
             },
             "east": {
-              "cullface": "east",
               "emissivity": 15,
               "texture": "#inner"
             },
             "north": {
-              "cullface": "north",
               "emissivity": 15,
               "texture": "#inner"
             },
             "south": {
-              "cullface": "south",
               "emissivity": 15,
               "texture": "#inner"
             },
             "up": {
-              "cullface": "up",
               "emissivity": 15,
               "texture": "#inner"
             },
             "west": {
-              "cullface": "west",
               "emissivity": 15,
               "texture": "#inner"
             }

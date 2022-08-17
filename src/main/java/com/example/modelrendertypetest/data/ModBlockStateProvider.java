@@ -5,7 +5,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.loaders.CompositeModelBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -16,12 +15,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Example Block model
         ResourceLocation exampleBlockId = ModelRenderTypeTest.EXAMPLE_BLOCK.getId();
         BlockModelBuilder exampleBlockInner = models()
                 .nested()
                     .element()
                         .from(4, 4, 4).to(12, 12, 12)
-                        .allFaces((dir, f) -> f.cullface(dir).emissive())
+                        .allFaces((dir, f) -> f.emissive())
                         .textureAll("#inner")
                         .shade(false)
                         .end()
