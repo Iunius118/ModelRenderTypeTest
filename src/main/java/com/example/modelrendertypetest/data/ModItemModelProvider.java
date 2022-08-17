@@ -18,12 +18,15 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // Example Block item model
         ResourceLocation exampleBlockId = ModelRenderTypeTest.EXAMPLE_BLOCK.getId();
         getBuilder(exampleBlockId.getPath())
                 .parent(new ModelFile.UncheckedModelFile(modLoc("block/" + exampleBlockId.getPath())));
 
+        // Example Item Model
         ResourceLocation exampleItemId = ModelRenderTypeTest.EXAMPLE_ITEM.getId();
-        ItemModelBuilder grip = nested()
+        // Create parts
+        ItemModelBuilder gripModel = nested()
                 .element()
                     .from(7.5f, 0f, 7.5f).to(8.5f, 5f, 8.5f)
                     .allFaces((dir, f) -> f.uvs(0f, 0f, 16f, 16f))
@@ -36,7 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                     .end()
                 .texture("grip", mcLoc("block/smooth_stone"))
                 .renderType("solid");
-        ItemModelBuilder innerBlade = nested()
+        ItemModelBuilder innerBladeModel = nested()
                 .element()
                     .from(7.25f, 6f, 7.5f).to(8.75f, 20f, 8.5f)
                     .allFaces((dir, f) -> f.uvs(1f, 1f, 15f, 15f).emissive())
@@ -45,7 +48,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("inner", mcLoc("block/diamond_block"))
                 .ao(false)
                 .renderType("solid");
-        ItemModelBuilder outerBlade = nested()
+        ItemModelBuilder outerBladeModel = nested()
                 .element()
                 .from(7.5f, 6f, 6.75f).to(8.5f, 21f, 9.25f)
                 .allFaces((dir, f) -> f.uvs(1f, 1f, 15f, 15f).emissive())
@@ -53,11 +56,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .end()
                 .texture("outer", mcLoc("block/white_stained_glass"))
                 .renderType("translucent");
+        // Compound all parts into a model file
         withExistingParent(exampleItemId.getPath(), "forge:item/default")
                 .customLoader(CompositeModelBuilder::begin)
-                    .child(exampleItemId.getPath() + "_grip", grip)
-                    .child(exampleItemId.getPath() + "_inner_blade", innerBlade)
-                    .child(exampleItemId.getPath() + "_outer_blade", outerBlade)
+                    .child(exampleItemId.getPath() + "_grip", gripModel)
+                    .child(exampleItemId.getPath() + "_inner_blade", innerBladeModel)
+                    .child(exampleItemId.getPath() + "_outer_blade", outerBladeModel)
                     .end()
                 .guiLight(BlockModel.GuiLight.FRONT)
                 .transforms()
