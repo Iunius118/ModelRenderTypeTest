@@ -3,6 +3,7 @@ package com.example.modelrendertypetest;
 import com.example.modelrendertypetest.data.ModBlockStateProvider;
 import com.example.modelrendertypetest.data.ModItemModelProvider;
 import com.example.modelrendertypetest.data.ModLanguageProvider;
+import com.example.modelrendertypetest.data.ModLootTableProvider;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -39,6 +40,10 @@ public class ModelRenderTypeTest {
     private void gatherData(final GatherDataEvent event) {
         var dataGenerator = event.getGenerator();
         var existingFileHelper = event.getExistingFileHelper();
+
+        // Server
+        boolean includesServer = event.includeServer();
+        dataGenerator.addProvider(includesServer, new ModLootTableProvider(dataGenerator));
 
         // Client
         boolean includesClient = event.includeClient();
