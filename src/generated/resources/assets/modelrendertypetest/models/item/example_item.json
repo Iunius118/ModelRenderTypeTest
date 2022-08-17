@@ -1,0 +1,422 @@
+{
+  "parent": "forge:item/default",
+  "children": {
+    "example_item_grip": {
+      "elements": [
+        {
+          "faces": {
+            "down": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "east": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "north": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "south": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "up": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "west": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            }
+          },
+          "from": [
+            7.5,
+            0,
+            7.5
+          ],
+          "to": [
+            8.5,
+            5,
+            8.5
+          ]
+        },
+        {
+          "faces": {
+            "down": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "east": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "north": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "south": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "up": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            },
+            "west": {
+              "texture": "#grip",
+              "uv": [
+                0.0,
+                0.0,
+                16.0,
+                16.0
+              ]
+            }
+          },
+          "from": [
+            6.5,
+            5,
+            6.5
+          ],
+          "to": [
+            9.5,
+            6,
+            9.5
+          ]
+        }
+      ],
+      "render_type": "minecraft:solid",
+      "textures": {
+        "grip": "minecraft:block/smooth_stone"
+      }
+    },
+    "example_item_inner_blade": {
+      "ambientocclusion": false,
+      "elements": [
+        {
+          "faces": {
+            "down": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "east": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "north": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "south": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "up": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "west": {
+              "emissivity": 15,
+              "texture": "#inner",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            }
+          },
+          "from": [
+            7.25,
+            6,
+            7.5
+          ],
+          "to": [
+            8.75,
+            20,
+            8.5
+          ]
+        }
+      ],
+      "render_type": "minecraft:solid",
+      "textures": {
+        "inner": "minecraft:block/diamond_block"
+      }
+    },
+    "example_item_outer_blade": {
+      "elements": [
+        {
+          "faces": {
+            "down": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "east": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "north": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "south": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "up": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            },
+            "west": {
+              "emissivity": 15,
+              "texture": "#outer",
+              "uv": [
+                1.0,
+                1.0,
+                15.0,
+                15.0
+              ]
+            }
+          },
+          "from": [
+            7.5,
+            6,
+            6.75
+          ],
+          "to": [
+            8.5,
+            21,
+            9.25
+          ]
+        }
+      ],
+      "render_type": "minecraft:translucent",
+      "textures": {
+        "outer": "minecraft:block/white_stained_glass"
+      }
+    }
+  },
+  "display": {
+    "firstperson_lefthand": {
+      "rotation": [
+        17,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.68,
+        0.6
+      ],
+      "translation": [
+        -1.25,
+        4,
+        4
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        17,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.68,
+        0.6
+      ],
+      "translation": [
+        -1.25,
+        4,
+        4
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        90,
+        -45,
+        90
+      ],
+      "translation": [
+        2,
+        -2,
+        -1.5
+      ]
+    },
+    "ground": {
+      "rotation": [
+        90,
+        -45,
+        90
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "translation": [
+        -1.25,
+        4,
+        4
+      ]
+    },
+    "gui": {
+      "rotation": [
+        90,
+        45,
+        -90
+      ],
+      "translation": [
+        -2,
+        -2,
+        0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3.5,
+        1
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3.5,
+        1
+      ]
+    }
+  },
+  "gui_light": "front",
+  "item_render_order": [
+    "example_item_grip",
+    "example_item_inner_blade",
+    "example_item_outer_blade"
+  ],
+  "loader": "forge:composite"
+}

@@ -1,0 +1,113 @@
+{
+  "parent": "forge:block/default",
+  "children": {
+    "example_block_inner": {
+      "ambientocclusion": false,
+      "elements": [
+        {
+          "faces": {
+            "down": {
+              "cullface": "down",
+              "emissivity": 15,
+              "texture": "#inner"
+            },
+            "east": {
+              "cullface": "east",
+              "emissivity": 15,
+              "texture": "#inner"
+            },
+            "north": {
+              "cullface": "north",
+              "emissivity": 15,
+              "texture": "#inner"
+            },
+            "south": {
+              "cullface": "south",
+              "emissivity": 15,
+              "texture": "#inner"
+            },
+            "up": {
+              "cullface": "up",
+              "emissivity": 15,
+              "texture": "#inner"
+            },
+            "west": {
+              "cullface": "west",
+              "emissivity": 15,
+              "texture": "#inner"
+            }
+          },
+          "from": [
+            4,
+            4,
+            4
+          ],
+          "shade": false,
+          "to": [
+            12,
+            12,
+            12
+          ]
+        }
+      ],
+      "render_type": "minecraft:solid",
+      "textures": {
+        "inner": "minecraft:block/diamond_block"
+      }
+    },
+    "example_block_outer": {
+      "elements": [
+        {
+          "faces": {
+            "down": {
+              "cullface": "down",
+              "texture": "#outer"
+            },
+            "east": {
+              "cullface": "east",
+              "texture": "#outer"
+            },
+            "north": {
+              "cullface": "north",
+              "texture": "#outer"
+            },
+            "south": {
+              "cullface": "south",
+              "texture": "#outer"
+            },
+            "up": {
+              "cullface": "up",
+              "texture": "#outer"
+            },
+            "west": {
+              "cullface": "west",
+              "texture": "#outer"
+            }
+          },
+          "from": [
+            0,
+            0,
+            0
+          ],
+          "to": [
+            16,
+            16,
+            16
+          ]
+        }
+      ],
+      "render_type": "minecraft:translucent",
+      "textures": {
+        "outer": "minecraft:block/white_stained_glass"
+      }
+    }
+  },
+  "item_render_order": [
+    "example_block_inner",
+    "example_block_outer"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "minecraft:block/white_stained_glass"
+  }
+}

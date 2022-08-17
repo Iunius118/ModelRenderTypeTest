@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "modelrendertypetest:block/example_block"
+    }
+  }
+}
