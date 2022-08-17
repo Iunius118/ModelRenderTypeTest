@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "modelrendertypetest:example_block"
+    },
+    "s": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "s"
+  ],
+  "result": {
+    "item": "modelrendertypetest:example_item"
+  }
+}
