@@ -37,7 +37,8 @@ public class ModLootTableProvider extends LootTableProvider {
 
     private static class ModBlockLootTables extends BlockLoot {
         private final List<Block> modBlocks = Stream.of(
-                ModelRenderTypeTest.EXAMPLE_BLOCK.get()
+                ModelRenderTypeTest.EXAMPLE_BLOCK.get(),
+                ModelRenderTypeTest.DIAMOND_STAIR_BLOCK.get()
         ).collect(ImmutableList.toImmutableList());
 
         @Override

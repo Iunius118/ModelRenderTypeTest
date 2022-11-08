@@ -97,5 +97,10 @@ public class ModItemModelProvider extends ItemModelProvider {
                         .translation(2f, -2f, -1.5f)
                         .end()
                     .end();
+
+        // Diamond Stair item model
+        ResourceLocation diamondStairId = ModelRenderTypeTest.DIAMOND_STAIR_BLOCK.getId();
+        getBuilder(diamondStairId.getPath())
+                .parent(new ModelFile.UncheckedModelFile(modLoc("block/" + diamondStairId.getPath())));
     }
 }

@@ -38,5 +38,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('s', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_modelrendertypetest_example_block", has(exampleBlock))
                 .save(consumer);
+
+        // Diamond Stairs
+        Block diamondStairBlock = ModelRenderTypeTest.DIAMOND_STAIR_BLOCK.get();
+        ShapedRecipeBuilder.shaped(diamondStairBlock, 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', Tags.Items.STORAGE_BLOCKS_DIAMOND)
+                .unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND))
+                .save(consumer);
     }
 }

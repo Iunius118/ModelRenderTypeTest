@@ -1,3 +1,7 @@
-// 1.19	2022-08-18T01:03:07.3642932	Block States: modelrendertypetest
+// 1.19	2022-11-07T01:37:40.5915777	Block States: modelrendertypetest
+79cc1ca1a8d3b38ca9e62eac8e3568f9784646f0 assets/modelrendertypetest/blockstates/diamond_stairs.json
 eefc3f33325099d60e8b5fb0fc11914c9873315f assets/modelrendertypetest/blockstates/example_block.json
+8879e1f4cda5845340c90aae0b84b4243166b334 assets/modelrendertypetest/models/block/diamond_stairs.json
+9fe83c15cb94ee9b7c02b21afab17cc7b627b179 assets/modelrendertypetest/models/block/diamond_stairs_inner.json
+3ae6bec13540693f7eae49a0e9f199838465c83c assets/modelrendertypetest/models/block/diamond_stairs_outer.json
 0ba37b117c9578e6dee6c585b0565c0c945727a7 assets/modelrendertypetest/models/block/example_block.json

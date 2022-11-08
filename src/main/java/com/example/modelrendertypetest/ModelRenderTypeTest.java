@@ -4,6 +4,8 @@ import com.example.modelrendertypetest.data.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -25,6 +27,9 @@ public class ModelRenderTypeTest {
     public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).instabreak().noOcclusion()));
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new SwordItem(Tiers.DIAMOND, 3, -2.4F, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<Block> DIAMOND_STAIR_BLOCK = BLOCKS.register("diamond_stairs", () -> new StairBlock(Blocks.DIAMOND_BLOCK::defaultBlockState, BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Item> DIAMOND_STAIR_ITEM = ITEMS.register("diamond_stairs", () -> new BlockItem(DIAMOND_STAIR_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
     public ModelRenderTypeTest() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

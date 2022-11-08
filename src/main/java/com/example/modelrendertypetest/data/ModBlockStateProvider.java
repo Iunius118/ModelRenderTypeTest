@@ -3,6 +3,7 @@ package com.example.modelrendertypetest.data;
 import com.example.modelrendertypetest.ModelRenderTypeTest;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.loaders.CompositeModelBuilder;
@@ -45,5 +46,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                     .texture("particle", mcLoc("block/white_stained_glass"));
 
         simpleBlock(ModelRenderTypeTest.EXAMPLE_BLOCK.get(), exampleBlock);
+
+        // Diamond Stair model
+        stairsBlock((StairBlock) ModelRenderTypeTest.DIAMOND_STAIR_BLOCK.get(), new ResourceLocation("block/diamond_block"));
     }
 }

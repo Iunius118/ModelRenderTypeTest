@@ -1,5 +1,7 @@
-// 1.19	2022-08-18T01:03:07.3642932	Recipes
+// 1.19	2022-11-07T01:37:40.5965754	Recipes
+b0f30f412a00c60e4b63da10f59cc24276dd2202 data/modelrendertypetest/advancements/recipes/building_blocks/diamond_stairs.json
 ea5425632b40d32b59fedf16ee3f2b6137ccf526 data/modelrendertypetest/advancements/recipes/combat/example_item.json
 f4aaade2e8b633aaa27849aa88512a5c79954d74 data/modelrendertypetest/advancements/recipes/decorations/example_block.json
+7b259f7f4421a3bc9d646fdcd7138db22b9e8037 data/modelrendertypetest/recipes/diamond_stairs.json
 a2781b0072601f0ce870e6ec0ef53b77c39f19fd data/modelrendertypetest/recipes/example_block.json
 bce5fbcd9b3a36ebdce431b41d3a9cfe242d559b data/modelrendertypetest/recipes/example_item.json

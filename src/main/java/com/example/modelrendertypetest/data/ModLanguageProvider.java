@@ -11,7 +11,8 @@ public class ModLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add(ModelRenderTypeTest.EXAMPLE_ITEM.get(), "Example Item");
         add(ModelRenderTypeTest.EXAMPLE_BLOCK.get(), "Example Block");
+        add(ModelRenderTypeTest.EXAMPLE_ITEM.get(), "Example Item");
+        add(ModelRenderTypeTest.DIAMOND_STAIR_BLOCK.get(), "Diamond Stairs");
     }
 }
